@@ -1,0 +1,94 @@
+body {
+    overflow-x: hidden;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .main {
+    margin-top: 6%;
+  }
+  
+  /* Menu Item Css Part */
+  
+  .menu-item:hover {
+    color: orangered;
+    transform: scale(1.1);
+  }
+  
+  /* Product Card CSS Part */
+  
+  .single-product {
+    padding: 10px;
+    transition: 0.6s;
+  }
+  
+  .single-product:hover {
+    box-shadow: 4px 4px 7px gray;
+    border-radius: 10px;
+    border: 1px solid greenyellow;
+  }
+  
+  .product-image {
+    width: 68%;
+    height: 230px;
+  }
+  
+  .star-color {
+    color: rgb(255, 149, 41);
+  }
+  
+  /* Invoice Card CSS Part */
+  
+  .cart {
+    margin-top: 6%;
+    width: 350px;
+    border: 1px solid green;
+    padding: 10px;
+    box-shadow: 10px 10px 20px gray;
+    border-radius: 5px;
+    margin-right: 30px;
+    position: fixed;
+    background-color: whitesmoke;
+  }
+  
+  .cart-main {
+    padding-right: 30px;
+  }
+  
+  /* Media Query Part Start */
+  
+  @media only screen and (min-width: 768px) {
+    #search-field {
+      width: 30%;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .cart {
+      width: 300px;
+      border: 1px solid green;
+      padding: 10px;
+      box-shadow: 10px 10px 20px gray;
+      border-radius: 5px;
+      position: fixed;
+    }
+    .cart-main {
+      padding-right: 10px;
+    }
+    .main {
+      margin-top: 35%;
+    }
+    #search-field {
+      width: 70%;
+    }
+  }
+  
+  @media only screen and (max-width: 468px) {
+    .main {
+      margin-top: 35%;
+    }
+    #search-field {
+      width: 70%;
+    }
+  }
+  
+  /* Media Query Part End */
